@@ -1,0 +1,13 @@
+{
+  "name": "webgl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "dslagle <slagle.derek@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+      "start": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^2.4.2"
+  }
+}
