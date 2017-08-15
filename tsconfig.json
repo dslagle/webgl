@@ -6,13 +6,7 @@
         "removeComments": true,
         "outDir": "build/ts_build"
     },
-    "include": [
-        "webgl.ts"
-    ],
-    "exclude": [
-        "node_modules"
-    ],
-    "files": {
-        "./src/**.ts"
-    }
+    "files": [
+        "./src/**/*.ts"
+    ]
 }
