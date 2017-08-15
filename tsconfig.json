@@ -1,11 +1,18 @@
 {
     "compilerOptions": {
-        "target": "es5"
+        "module": "es2015",
+        "target": "es5",
+        "sourceMap": true,
+        "removeComments": true,
+        "outDir": "build/ts_build"
     },
     "include": [
         "webgl.ts"
     ],
     "exclude": [
         "node_modules"
-    ]
+    ],
+    "files": {
+        "./src/**.ts"
+    }
 }
