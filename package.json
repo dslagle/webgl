@@ -5,9 +5,21 @@
   "author": "dslagle <slagle.derek@gmail.com>",
   "license": "MIT",
   "scripts": {
-      "start": "tsc"
+    "dev": "tsc -w & rollup -c \"\rollup.config.js\" -w & npm serve",
+    "devElectron": "tsc -w & rollup -c \"\rollup.config.js\" -w & npm serveElectron",
+    "serve": "./node_modules/http-server/bin/http-server ./",
+    "serveElectron": "electron ."
   },
   "dependencies": {
+    "electron": "^1.7.5",
     "typescript": "^2.4.2"
+  },
+  "devDependencies": {
+    "concurrent": "^0.3.2",
+    "http-server": "^0.10.0",
+    "rollup": "^0.47.4",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-watch": "^4.3.1",
+    "tslint": "^5.6.0"
   }
 }
