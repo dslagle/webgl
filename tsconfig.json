@@ -6,7 +6,7 @@
         "removeComments": true,
         "outDir": "build/ts_build"
     },
-    "files": [
+    "includes": [
         "./src/**/*.ts"
     ]
 }
