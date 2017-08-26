@@ -4,7 +4,12 @@
         "target": "es5",
         "sourceMap": true,
         "removeComments": true,
-        "outDir": "build/ts_build"
+        "outDir": "build/ts_build",
+        "lib": [
+            "es2015",
+            "es2016",
+            "dom"
+        ]
     },
     "includes": [
         "./src/**/*.ts"
