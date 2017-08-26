@@ -5,13 +5,14 @@
   "author": "dslagle <slagle.derek@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "tsc -w & rollup -c \"\rollup.config.js\" -w & npm serve",
-    "devElectron": "tsc -w & rollup -c \"\rollup.config.js\" -w & npm serveElectron",
+    "dev": "tsc & rollup -c \"rollup.config.js\" -w & yarn run serve",
+    "devElectron": "tsc -w & rollup -c \"\rollup.config.js\" -w & yarn run serveElectron",
     "serve": "./node_modules/http-server/bin/http-server ./",
     "serveElectron": "electron ."
   },
   "dependencies": {
     "electron": "^1.7.5",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "typescript": "^2.4.2"
   },
   "devDependencies": {
